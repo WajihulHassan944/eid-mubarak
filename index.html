@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wajih-Eid-wishes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <section class="hero-section imagechange">
+
+            <div class="headimg">
+                <img class="eid" src="images/eid1.png" alt="" srcset="" />
+                
+                    <img  src="images/sky cracker eid.gif" width="150px" alt="" srcset="" />
+            </div>
+
+            <div class="paragraph">
+                <p>
+                    AoA, <span class="my-name"><span id="senderName">Wajih ul Hassan</span></span> ki taraf se  
+                    Bohat Bohat Eid Mubarak <span id="receiverName" class="my-name">Abdullah</span>! <br />
+                    As the moon shines in the sky, I have wrapped love and joy into a special gift for you because  
+                    your happiness means everything to me. Eid Mubarak! 🌙✨
+                </p>
+                
+                <script>
+                    // Function to get URL parameters
+                    function getQueryParam(param) {
+                        const urlParams = new URLSearchParams(window.location.search);
+                        return urlParams.get(param) || null;
+                    }
+                
+                    // Function to capitalize each word
+                    function capitalizeWords(str) {
+                        return str
+                            .toLowerCase() // Ensure lowercase first
+                            .split(" ") // Split words
+                            .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
+                            .join(" "); // Join back into a string
+                    }
+                
+                    // Get sender and receiver from URL, set default values if missing
+                    const sender = capitalizeWords(getQueryParam("sender") || "Wajih ul Hassan");
+                    const receiver = capitalizeWords(getQueryParam("receiver") || "Abdullah");
+                
+                    // Update the HTML with dynamic values
+                    document.getElementById("senderName").textContent = sender;
+                    document.getElementById("receiverName").textContent = receiver;
+                </script>
+                
+                
+                
+                <div class="audio-contaier">
+                    <img src="images/audio.png" alt="" /><span class="text">🌙</span>
+                    <img src="images/training.png" alt="" />
+                    <audio 
+    src="music/Y2meta.app - Maula Ya Salli - Sami Yusuf ft. Qasida Burda Shareef ( Slowed & Reverb) (192 kbps).mp3" 
+    controls 
+    autoplay
+  >
+</audio>
+<script>window.addEventListener("DOMContentLoaded", function () {
+    const audio = document.querySelector("audio");
+    audio.play().catch(error => console.log("Autoplay blocked:", error));
+});
+</script>
+                </div>
+            </div>
+
+            <div class="deepak">
+                <img class="deepak1" src="images/iftar.png" alt="" />
+                <img class="deepak2" src="images/iftar.png" alt="" />
+            </div>
+
+        </section>
+
+        <section class="laxmi-ganesha">
+            <div class="horigental-devide">
+                <div class="horigental-line"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="horigental-line"></div>
+            </div>
+
+            <img class="laxmi-g" src="images/eidmubark.png" alt="" srcset="" />
+
+            <h2>Wishing You a Blessed and Prosperous <br> Eid Mubarak</h2>
+            <div class="horigental-devide">
+                <div class="horigental-line"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="horigental-line"></div>
+            </div>
+            <div class="text-image">
+                <div class="box"><p>Eid Mubarak! 🌙✨ Ye purmusarrat mouqa aap aur aap ke pyaron ke liye khushiyan, barkatain aur ittehad le kar aaye.</p>  
+                    <br />  
+                    <p>Allah aapko khushiyan, sehat, kamiyabiyaan aur be-shumar rehmatain ata farmaaye. Ameen! 🎉</p>
+                    
+                </div>
+                <!-- <img class="little" src="images/image.png" alt="" /> -->
+            </div>
+
+            <div class="horigental-devide">
+                <div class="horigental-line"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="horigental-line"></div>
+            </div>
+            <div class="lastbox">
+
+                <img src="images/eid.png" alt="">
+            </div>
+            <br>
+           
+            <div class="cracker">
+                <img class="cracker-img" src="images/sky cracker eid.gif" alt="" srcset="" />
+            </div>
+            <div class="thankstext-">
+                <h4>Happy Eid Mubark <span id="year"></span> </h3>
+                    <h3 id="stylish">Thanks for everything</h3>
+                    <h5>Made with &hearts; Wajih ul Hassan</h5>
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+    </div>
+</body>
+
+
+</html>
